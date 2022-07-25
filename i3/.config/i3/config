@@ -115,7 +115,7 @@ set $ws2 "2 Code  "
 set $ws3 "3 Browser  "
 set $ws4 "4 Chill  "
 set $ws5 "5 Obs  "
-set $ws6 "6"
+set $ws6 "6 Files  "
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
@@ -212,23 +212,27 @@ bar {
 	}
 }
 
-# my edits
+# My configs
 
-# Screen brightness controls
+# stop mouse warping
+focus_follows_mouse no
+
+# set keyboard layout to colemak-dh angle mod (ansi)
+exec_always --no-startup-id setxkbmap us colemak_dh
+
+# Screen brightness controls - doesn't work :(
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # setting the correct pulse profile
-exec pacmd set-default-sink 0
-exec pacmd set-default-source 1
+exec_always --no-startup-id  pacmd set-default-sink 0
+exec_always --no-startup-id  pacmd set-default-source 1
 
-# removing theh ugly borders
+# removing them ugly borders
 default_border pixel 2
 default_floating_border pixel 2
-                          # class                 border  backgr. text    indicator child_border
-for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4   #285577
 
-bindsym Print exec screenshot
+bindsym Print exec --no-startup-id flameshot gui
 #bindsym $mod+Return exec xfce4-terminal
 
 # A more modern dmenu replacement is rofi:
@@ -236,17 +240,24 @@ bindsym $mod+d exec --no-startup-id rofi -show drun
 
 
 # default workspace
+assign [class="Gnome-terminal"] $ws1
 assign [class="Code"] $ws2
 assign [class="Google-chrome"] $ws3
 assign [class="obs"] $ws5
+assign [class="Org.gnome.Nautilus"] $ws6
 
 
 # move focused workspace between monitors
 bindsym $mod+Ctrl+greater move workspace to output right
 bindsym $mod+Ctrl+less move workspace to output left
 
-exec_always setxkbmap -option 'caps:escape'
-exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-1 --off --output HDMI-2 --mode 1366x768 --pos 1920x0 --rotate normal
-exec_always feh --bg-scale /home/sudonick/Pictures/Wallpapers/wall.png
+exec_always --no-startup-id setxkbmap -option 'caps:escape'
+exec_always --no-startup-id xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-1 --off --output HDMI-2 --mode 1366x768 --pos 1920x0 --rotate normal
+exec_always --no-startup-id feh --bg-scale /home/sudonick/Pictures/Wallpapers/wall.png
+
+exec --no-startup-id nautilus
+exec --no-startup-id google-chrome
+exec --no-startup-id code
+exec --no-startup-id gnome-terminal
 
 

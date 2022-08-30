@@ -268,4 +268,4 @@ exec --no-startup-id google-chrome
 exec --no-startup-id code
 exec --no-startup-id gnome-terminal
 exec --no-startup-id cd ~ && ./obsidian
-exec_always --no-startup-id i3-msg 'exec gnome-terminal -- tmux attach && i3-msg move container to workspace "2 Code  "' 
+exec --no-startup-id i3-msg 'exec gnome-terminal -- tmux attach && i3-msg move container to workspace "2 Code  "' 

@@ -1,7 +1,0 @@
-2022/11/25-19:09:27.776 35919 Reusing MANIFEST /home/sudonick/.config/google-chrome/Profile 2/IndexedDB/https_www.twitch.tv_0.indexeddb.leveldb/MANIFEST-000001
-2022/11/25-19:09:27.776 35919 Recovering log #3
-2022/11/25-19:09:27.776 35919 Reusing old log /home/sudonick/.config/google-chrome/Profile 2/IndexedDB/https_www.twitch.tv_0.indexeddb.leveldb/000003.log 
-2022/11/25-19:09:59.800 358e3 Level-0 table #5: started
-2022/11/25-19:09:59.803 358e3 Level-0 table #5: 1235 bytes OK
-2022/11/25-19:09:59.806 358e3 Delete type=0 #3
-2022/11/25-19:09:59.806 358e3 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

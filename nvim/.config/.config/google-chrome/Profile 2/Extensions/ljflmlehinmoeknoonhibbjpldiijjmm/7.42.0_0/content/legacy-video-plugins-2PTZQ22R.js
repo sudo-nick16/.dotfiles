@@ -1,1 +1,0 @@
-import{d as e,e as o}from"./chunk-HQV57N4U.js";import{i,p as n}from"./chunk-LA3C5XP7.js";n();i();function a(u){return e(this,void 0,void 0,function(){var r;return o(this,function(t){switch(t.label){case 0:return[4,import("./index.umd-W34RBBCI.js")];case 1:return r=t.sent(),u._plugins=r,[2]}})})}export{a as loadLegacyVideoPlugins};

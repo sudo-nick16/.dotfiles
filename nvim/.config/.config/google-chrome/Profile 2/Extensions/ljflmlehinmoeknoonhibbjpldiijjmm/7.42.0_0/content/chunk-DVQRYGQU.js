@@ -1,1 +1,0 @@
-import{b as n}from"./chunk-BL5UKU3H.js";import{a as t,c as i}from"./chunk-RC4DYKRG.js";import{mc as m}from"./chunk-RMQ4NLAU.js";import{i as o,p as e}from"./chunk-LA3C5XP7.js";e();o();var p=r=>r==="playing"?i:r==="buffering"?m:r==="errored"?n:t;export{p as a};

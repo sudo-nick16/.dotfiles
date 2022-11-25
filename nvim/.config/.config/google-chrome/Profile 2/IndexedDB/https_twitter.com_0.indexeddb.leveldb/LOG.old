@@ -1,6 +1,0 @@
-2022/11/25-04:38:29.666 28139 Creating DB /home/sudonick/.config/google-chrome/Profile 2/IndexedDB/https_twitter.com_0.indexeddb.leveldb since it was missing.
-2022/11/25-04:38:29.673 28139 Reusing MANIFEST /home/sudonick/.config/google-chrome/Profile 2/IndexedDB/https_twitter.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/11/25-04:39:23.644 27f52 Level-0 table #5: started
-2022/11/25-04:39:23.648 27f52 Level-0 table #5: 2232 bytes OK
-2022/11/25-04:39:23.651 27f52 Delete type=0 #3
-2022/11/25-04:39:23.652 27f52 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

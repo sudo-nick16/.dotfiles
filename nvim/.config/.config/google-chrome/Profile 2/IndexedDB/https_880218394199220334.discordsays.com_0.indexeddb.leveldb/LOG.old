@@ -1,6 +1,0 @@
-2022/11/26-00:15:49.417 3d8ce Creating DB /home/sudonick/.config/google-chrome/Profile 2/IndexedDB/https_880218394199220334.discordsays.com_0.indexeddb.leveldb since it was missing.
-2022/11/26-00:15:49.424 3d8ce Reusing MANIFEST /home/sudonick/.config/google-chrome/Profile 2/IndexedDB/https_880218394199220334.discordsays.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/11/26-00:39:57.997 3e250 Level-0 table #5: started
-2022/11/26-00:39:58.000 3e250 Level-0 table #5: 1190 bytes OK
-2022/11/26-00:39:58.004 3e250 Delete type=0 #3
-2022/11/26-00:39:58.005 3e250 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

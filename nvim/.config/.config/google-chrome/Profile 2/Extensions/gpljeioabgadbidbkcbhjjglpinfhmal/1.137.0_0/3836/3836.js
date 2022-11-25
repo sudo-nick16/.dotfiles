@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunk_realtimeskills_universal=self.webpackChunk_realtimeskills_universal||[]).push([[3836],{83836:function(e,n,s){s.r(n),s.d(n,{extensionAnalytics:function(){return r}});var i=s(32697),l=s.n(i),t=s(60212).c.segmentKey,r=new(l())(t)}}]);
-//# sourceMappingURL=3836.js.map

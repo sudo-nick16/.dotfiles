@@ -1,1 +1,0 @@
-import{B as r}from"./chunk-RMQ4NLAU.js";import{e as i,i as e,p as t}from"./chunk-LA3C5XP7.js";t();e();var l=i(r()),s={mobilePlayerCollapseState:!1},n=new l.Store({...s});function p(o){n.set(a=>({...a,mobilePlayerCollapseState:o}))}export{n as a,p as b};

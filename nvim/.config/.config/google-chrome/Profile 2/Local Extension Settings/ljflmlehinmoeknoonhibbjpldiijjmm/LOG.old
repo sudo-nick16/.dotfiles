@@ -1,0 +1,12 @@
+2022/11/23-19:15:14.846 10ac Reusing MANIFEST /home/sudonick/.config/google-chrome/Profile 2/Local Extension Settings/ljflmlehinmoeknoonhibbjpldiijjmm/MANIFEST-000001
+2022/11/23-19:15:14.846 10ac Recovering log #2813
+2022/11/23-19:15:14.892 10ac Reusing old log /home/sudonick/.config/google-chrome/Profile 2/Local Extension Settings/ljflmlehinmoeknoonhibbjpldiijjmm/002813.log 
+2022/11/23-19:23:15.958 17ce Level-0 table #2818: started
+2022/11/23-19:23:15.990 17ce Level-0 table #2818: 1078769 bytes OK
+2022/11/23-19:23:15.997 17ce Delete type=0 #2813
+2022/11/23-19:37:51.515 1c26 Compacting 1@1 + 1@2 files
+2022/11/23-19:37:51.531 1c26 Generated table #2819@1: 15 keys, 13820 bytes
+2022/11/23-19:37:51.531 1c26 Compacted 1@1 + 1@2 files => 13820 bytes
+2022/11/23-19:37:51.534 1c26 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/11/23-19:37:51.534 1c26 Delete type=2 #2815
+2022/11/23-19:37:51.534 1c26 Delete type=2 #2818

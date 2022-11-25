@@ -1,0 +1,53 @@
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+ * @license  MIT
+ */
+
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+/*!
+ * XRegExp 5.1.1
+ * <xregexp.com>
+ * Steven Levithan (c) 2007-present MIT License
+ */
+
+/*! https://mths.be/punycode v1.3.2 by @mathias */
+
+/*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
+
+/*! safe-buffer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
+
+/**
+ * @file Exports a simple function that will escape a string literal for use as an argument in the standard JS RegExp
+ * constructor.
+ * @module escape-regex-string
+ * @author monotonee <monotonee@tuta.io>
+ * @license MIT
+ */
+
+/**
+ * findAndReplaceDOMText v 0.4.6
+ * @author James Padolsey http://james.padolsey.com
+ * @license http://unlicense.org/UNLICENSE
+ *
+ * Matches the text of a DOM node against a regular expression
+ * and replaces each match (or node-separated portions of the match)
+ * in the specified element.
+ */
+
+/**!
+ * giturl - lib/giturl.js
+ *
+ * Copyright(c) 2014
+ * MIT Licensed
+ *
+ * Authors:
+ *   fengmk2 <fengmk2@gmail.com> (http://fengmk2.github.com)
+ */

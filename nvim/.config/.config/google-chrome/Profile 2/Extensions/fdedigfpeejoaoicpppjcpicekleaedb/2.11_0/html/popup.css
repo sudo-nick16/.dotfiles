@@ -1,0 +1,77 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 126px;
+    min-height: 70px;
+}
+
+body .menu_item .btn {
+    display: block;
+    align-items: center;
+    padding: 12px 10px 0px 10px;
+}
+
+body .menu_item .btn .icon-open {
+    width: 46px;
+    height: 46px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 32px;
+
+}
+
+body .menu_item .icon-mobile {
+    position: absolute;
+    bottom: 8px;
+    left: 64px;
+    width: 46px;
+    height: 46px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 32px;
+
+}
+
+body .menu_item .btn#openLink .icon-open {
+    background-image: url(chrome-extension://__MSG_@@extension_id__/assets/img/laptop.svg)
+
+}
+
+body .menu_item #openMobile .icon-mobile {
+    background-image: url(chrome-extension://__MSG_@@extension_id__/assets/img/phone.svg);
+
+}
+
+.icon-open {
+    box-sizing: content-box;
+    padding: 2px;
+    border-radius: 50%;
+    background: transparent;
+
+}
+
+.icon-open:hover {
+    cursor: pointer;
+    -webkit-filter: hue-rotate(14deg) saturate(1);
+    filter: hue-rotate(1deg) saturate(1) drop-shadow(2px 2px 3px rgba(224, 222, 222, 0.63));
+    background-color: #ececec;
+    transition: all .1s ease;
+}
+
+
+.icon-mobile {
+    box-sizing: content-box;
+    padding: 2px;
+    border-radius: 50%;
+    background: transparent;
+
+}
+
+.icon-mobile:hover {
+    cursor: pointer;
+    -webkit-filter: hue-rotate(14deg) saturate(1);
+    filter: hue-rotate(1deg) saturate(1) drop-shadow(2px 2px 3px rgba(224, 222, 222, 0.63));
+    background-color: #ececec;
+    transition: all .1s ease;
+}

@@ -1,0 +1,7 @@
+2022/11/25-20:11:03.522 3804b Reusing MANIFEST /home/sudonick/.config/google-chrome/Profile 2/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/11/25-20:11:03.522 3804b Recovering log #3
+2022/11/25-20:11:03.536 3804b Reusing old log /home/sudonick/.config/google-chrome/Profile 2/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000003.log 
+2022/11/25-20:11:56.630 38199 Level-0 table #5: started
+2022/11/25-20:11:56.671 38199 Level-0 table #5: 1999796 bytes OK
+2022/11/25-20:11:56.675 38199 Delete type=0 #3
+2022/11/25-20:11:56.676 38199 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

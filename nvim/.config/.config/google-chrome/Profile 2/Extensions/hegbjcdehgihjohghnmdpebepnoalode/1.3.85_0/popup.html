@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://assets.indiadesire.com/extn/images/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      <script src="scripts/jquery.js" ></script>
+  <script src="scripts/jquery.validate.min.js"></script>
+     <link rel="stylesheet" href="https://assets.indiadesire.com/extn/images/css/popup.css">
+		<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+		<style>
+			
+			.tabcontentF {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+.tabcontentF {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+			.tabcontentF1 {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+.tabcontentF1 {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+			.tabcontentR {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left:0; top: 2px;
+  width: 17px; height: 17px;
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content:'\f00c';
+  position: absolute;
+  top: 3px; left: 4px;
+  font-size: 18px;
+  line-height: 0.8;
+  color: #09ad7e;
+  transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 1px dotted blue;
+}
+
+/* hover style just for information */
+label:hover:before {
+  border: 1px solid #4778d9!important;
+}
+#pt_logo {
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+#id_logo {
+    height: 25px;
+   float:right;
+    margin-top: 30px;
+		margin-right:5px;
+}
+		</style>
+		<style>
+.contentr {
+    width: 47%;
+    height: 240px;
+ border: 1px solid #a1b8cc;
+    margin: 1.5%;
+    text-align: center;
+    background: #fff;
+		float:left;
+}
+.contentr:hover {
+	border: 2px solid #009E78;
+	background:#f3f3f3;
+}
+.content-logo {
+    width: 100%;
+    border-bottom: #FEEFEF 2px solid;
+    height: 80px;
+    background-color: #FFF;
+}
+.content-logo img {
+    max-width: 100%;
+    text-align: center;
+    max-height: 97%;
+}
+.content img {
+    margin: 0 auto;
+}
+.content img, a img {
+    border: medium none !important;
+    outline: medium none !important;
+}
+.content a img {
+    border: none;
+}
+.content img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.heading1 {
+    width: 97%;
+    margin: 0 auto;
+    height: 40px;
+    padding-top: 2px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size:12px;
+      word-break: break-word;
+  word-wrap: break-word;   
+    overflow-wrap: break-word;
+      color: #862708;
+			font-weight: bold;
+    
+}
+.bankoffer {
+width: 95%;
+    margin: 0 auto;
+    height: 25px;
+     color: #16be48;
+    font-size: 11px;
+	 border-bottom: 1px solid #e5e5e5;
+    letter-spacing: -.2px;
+    font-weight: 500;
+        display: inline-block;
+    margin-left: 8px;
+  
+    
+}
+.priceinfo {
+    width: 95%;
+    margin: 0 auto;
+    height: 30px;
+    padding-top: 2px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size:8px;
+      word-break: break-word;
+  word-wrap: break-word;   
+    overflow-wrap: break-word;
+  
+    
+}
+.timeinfo {
+    width: 95%;
+    margin: 0 auto;
+    height: 20px;
+    padding-top: 3px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size:10px;
+      word-break: break-word;
+  word-wrap: break-word;   
+    overflow-wrap: break-word;
+      color: #1719ad;
+    font-weight: bold;
+    
+}
+.storelogo {
+    width: 95%;
+    margin: 0 auto;
+    height: 22px;
+    padding-top: 3px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size:10px;
+      word-break: break-word;
+  word-wrap: break-word;   
+    overflow-wrap: break-word;
+  
+    
+}
+.content .shop_now {
+    width: 100%;
+    background-color: #FFF
+    text-align: center;
+}
+.cprice {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #212121;
+}
+.oprice {
+    display: inline-block;
+    margin-left: 8px;
+        text-decoration: line-through;
+    font-size: 14px;
+    color: #878787;
+}
+.discountp {
+    color: #16be48;
+    font-size: 13px;
+    letter-spacing: -.2px;
+    font-weight: 500;
+        display: inline-block;
+    margin-left: 8px;
+}
+.imgLoader
+{
+margin-left:45%;
+}
+</style>
+    
+</head>
+<body>
+
+<div id="cornerContent">
+    <div id="wd_foot">
+        <div id="ex_foot">
+            <div id="header"><img id="pt_logo" src="https://assets.indiadesire.com/extn/images/logo/pt_logo.png"><img id="id_logo" src="https://assets.indiadesire.com/extn/images/logo/IndiaDesire-New-Logo-small.png"></div>
+            <div id="all_container">
+                <div id="home" class="menu_content">
+                    <ul  class="tab">
+											 <li><a href="javascript:void(0)" class="active tablinks" totab="Recent">Recent Deals</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" totab="TopDeals">Top Deals</a></li>
+
+  <li><a href="javascript:void(0)" class="tablinks" totab="Featured">Featured Deals</a></li>
+</ul>
+										          <div id="Recent" class="tabcontent" style="display: block;">
+																<img style="display:block;margin-left:auto;margin-right:auto;height:150px"  src="images/gears.svg" alt="...">
+                     
+		  </div>
+                    <div id="TopDeals" class="tabcontent" style="display: none;">
+											<img style="display:block;margin-left:auto;margin-right:auto;height:150px"  src="images/gears.svg" alt="...">
+                     
+		  </div>
+             
+                          <div id="Featured" class="tabcontent" style="display: none;">
+														<img style="display:block;margin-left:auto;margin-right:auto;height:150px"  src="images/gears.svg" alt="...">
+                     
+                           
+		  </div>
+                </div>
+                <div id="abuy" class="menu_content visible">
+								 <ul  class="tab">
+											 <li><a href="javascript:void(0)" class="active tablinks1" totab="FlashSale">Flash Sale</a></li>
+  <li><a href="javascript:void(0)" class="tablinks1" totab="Guides">Sale Guides</a></li>
+
+  <li><a href="javascript:void(0)" class="tablinks1" totab="UpcomingSale">Sale on mi.com</a></li>
+</ul>
+								       <div id="FlashSale" class="tabcontentF" style="display: block;">
+												<table cellspacing="0" rules="all" border="1"  style="border-color:Transparent;border-style:None;width:100%;border-collapse:collapse;"><tbody>
+												<tr style="color:black;border-width:0px;"><td><div class="offerblock" style="height:auto;text-align:middle;margin-bottom:8px;background-image: linear-gradient(to bottom,#fff,#ce92a8)!important;"><table border="0" width="100%"><tbody><tr><td style="width:20%"><img  title="Auto Checkout on Flipkart" class="imagegrid" src="https://assets.indiadesire.com/extn/images/logo/flipkart-icon.png"   alt="Auto Checkout on Flipkart" style="height:70px;width:70px;"></td><td style="width:100%;padding-top:5px;font-size:0.95em;font-weight:bold;font-family:Arial;padding-left:10px;"><label for="fkptco" class="content_text" ><strong>Auto Checkout on Flipkart(Default address will be selected Please do payment selection from below for faster checkout)</strong></label> </td><td>       <input class="special" type="checkbox" name="fkptco" id="fkptco" /><label  class="special" for="fkptco"></label></td></tr></tbody></table></div></td></tr>
+												</tbody></table>
+                      AutoBuy:Please read sale Guides for more info to avoid losing your chances.
+											
+											<div id="choosepaymentmode" style="display:none;">
+												
+												<span style="color:red;font-weight: bold;">PaymentMode: </span><input class="specialpayment" type="radio" name="radiopaymentop" id="GIFTCARD" value="GIFTCARD" />&nbsp;GiftCard&nbsp;<input class="specialpayment" type="radio" name="radiopaymentop" id="PHONEPE" value="PHONEPE" />&nbsp;PhonePe&nbsp;<input class="specialpayment" type="radio" name="radiopaymentop" id="NET_OPTIONS" value="NET_OPTIONS" />&nbsp;NetBanking&nbsp;<br><input class="specialpayment" type="radio" name="radiopaymentop" id="COD" value="COD" />&nbsp;COD&nbsp;<input class="specialpayment" type="radio" name="radiopaymentop" id="OTHERS" value="OTHERS" />&nbsp;Others</br>
+											<div id="choosebank" style="display:none;"><span style="color:red;font-weight: bold;">Choose Bank: </span><input class="specialpaymentib" type="radio" name="radiopaymentopib" id="HDFC" value="HDFC" />&nbsp;HDFC&nbsp;<input class="specialpaymentib" type="radio" name="radiopaymentopib" id="SBI" value="SBI" />&nbsp;SBI&nbsp;<input class="specialpaymentib" type="radio" name="radiopaymentopib" id="ICICI" value="ICICI" />&nbsp;ICICI&nbsp;<input class="specialpaymentib" type="radio" name="radiopaymentopib" id="AXIS" value="AXIS" />&nbsp;AXIS&nbsp;<input class="specialpaymentib" type="radio" name="radiopaymentopib" id="KOTAK" value="KOTAK" />&nbsp;KOTAK&nbsp;<br></br>
+								</div>
+											 <div id="notegv" style="display:none;color:red;"><br><b>GiftCard(Make Sure you have enough GiftCard Balance To Complete the Order)</b></div>
+									<div id="noteothers" style="display:none;color:red;"><br><b>OTHERS(choose payment mode at checkout time by yourself)</b></div>
+										<div id="notecod" style="display:none;color:red;"><br><b>COD, You have to enter captcha and click Confirm Order(Don't Choose if Option Not available for Particular Product e.g. Redmi Note 5 Pro)</b></div>
+											</div>
+                	<span style="color:red;font-weight: bold;">Default Quantity: </span><input class="specialquantity" type="radio" name="radiopaymentsq" id="One" value="1" />&nbsp;One&nbsp;<input class="specialquantity" type="radio" name="radiopaymentsq" id="Two" value="2" />&nbsp;Two&nbsp;<input class="specialquantity" type="radio" name="radiopaymentsq" id="Three" value="3" />&nbsp;Three&nbsp;</br>
+                 <input type="image" id="pt-saleinfo" style="margin: auto; display:block;" src="https://assets.indiadesire.com/extn/images/refreshsaledata.png">
+		  </div>
+                    <div id="Guides" class="tabcontentF" style="display: none;">
+											1. Make sure you have been registered for the sale as below atleast 30 minutes prior, green check mark should be checked infront of interested product.</br>
+		  <img style="margin-left:30px;" src="https://assets.indiadesire.com/extn/images/flashsale/autobuy.png"></br>
+			2. Prior to Sale make sure your system time is approximate to correct time.Login to your account where sale is going to happen.And Empty your cart.</br>
+			3. Open The Product Page you have been registered for in your chrome browser atleast before 30 mins, The sale goes live.</br>
+			4. Make sure Extension is enabled all time during the sale otherwise you may loose the sale.</br>
+			5. Be Ready for other details like address selection, Payments etc, We will add the item to your cart then you have to proceed by yourself.(Auto Checkout Feature will be coming soon...).</br>
+			6. Having a working fast 3G/4G/wifi internet connection increases the chances of getting the product.		</br>
+			7. Make sure Pin Code Selected is deliverable.		</br>
+			8. Enable Auto Checkout to go to payment selection page automatically on flipkart..Make sure you have already filled address and set default address where ever you want in Flipkart>>My Account>>Addresses section.
+								</div>
+             
+                          <div id="UpcomingSale" class="tabcontentF" style="display: none;">
+														Note: Only one(variant) of Redmi Product you can register to add automatically to your cart.</br>
+                         <span style="color:red;font-weight: bold;"> Please Note That Redmi have only single flash sale page, So If any sale recently happened you may be redirected to that sale but rest assured at sale date you will be redirected to correct page..</span>
+		  </div>
+								</div>
+                <div id="features" class="menu_content">
+								    <ul  class="tab">
+											 <li><a href="javascript:void(0)" class="active tablinks2" totab="RealTimePriceDrop">Real Time Price Drops</a></li>
+ 
+</ul>
+													          <div id="RealTimePriceDrop" class="tabcontentR" style="display: block;">
+																<img style="display:block;margin-left:auto;margin-right:auto;height:150px"  src="images/gears.svg" alt="...">
+                     
+		  </div>
+								</div>
+                <div id="user" class="menu_content">
+               <div id="ContestParticipate" >
+                    <div id="FlashSale1" class="tabcontentF1" style="display: block;">
+												<table cellspacing="0" rules="all" border="1"  style="border-color:Transparent;border-style:None;width:100%;border-collapse:collapse;"><tbody>
+												<tr style="color:black;border-width:0px;"><td><div class="offerblock" style="height:auto;text-align:middle;margin-bottom:8px;background-image: linear-gradient(to bottom,#fff,#ce92a8)!important;"><table border="0" width="100%"><tbody><tr><td style="width:20%"><img  title="Auto Checkout on Flipkart" class="imagegrid" src="https://assets.indiadesire.com/extn/images/logo/flipkart-icon.png"   alt="Auto Checkout on Flipkart" style="height:70px;width:70px;"></td><td style="width:100%;padding-top:5px;font-size:0.95em;font-weight:bold;font-family:Arial;padding-left:10px;"><label for="fkptco1" class="content_text" ><strong>Auto Checkout on Flipkart(Default address will be selected Please do payment selection from below for faster checkout)</strong></label> </td><td>       <input class="special" type="checkbox" name="fkptco1" id="fkptco1" /><label  class="special" for="fkptco1"></label></td></tr></tbody></table></div></td></tr>
+												</tbody></table>
+                      AutoBuy:Please read sale Guides for more info to avoid losing your chances.
+											
+											<div id="choosepaymentmode1" style="display:none;">
+												
+												<span style="color:red;font-weight: bold;">PaymentMode: </span><input class="specialpayment1" type="radio" name="radiopaymentop1" id="GIFTCARD" value="GIFTCARD" />&nbsp;GiftCard&nbsp;<input class="specialpayment1" type="radio" name="radiopaymentop1" id="PHONEPE" value="PHONEPE" />&nbsp;PhonePe&nbsp;<input class="specialpayment1" type="radio" name="radiopaymentop1" id="NET_OPTIONS" value="NET_OPTIONS" />&nbsp;NetBanking&nbsp;<br><input class="specialpayment1" type="radio" name="radiopaymentop1" id="COD" value="COD" />&nbsp;COD&nbsp;<input class="specialpayment1" type="radio" name="radiopaymentop1" id="OTHERS" value="OTHERS" />&nbsp;Others</br>
+											<div id="choosebank1" style="display:none;"><span style="color:red;font-weight: bold;">Choose Bank: </span><input class="specialpaymentib1" type="radio" name="radiopaymentopib1" id="HDFC" value="HDFC" />&nbsp;HDFC&nbsp;<input class="specialpaymentib1" type="radio" name="radiopaymentopib1" id="SBI" value="SBI" />&nbsp;SBI&nbsp;<input class="specialpaymentib1" type="radio" name="radiopaymentopib1" id="ICICI" value="ICICI" />&nbsp;ICICI&nbsp;<input class="specialpaymentib1" type="radio" name="radiopaymentopib1" id="AXIS" value="AXIS" />&nbsp;AXIS&nbsp;<input class="specialpaymentib1" type="radio" name="radiopaymentopib1" id="KOTAK" value="KOTAK" />&nbsp;KOTAK&nbsp;<br></br>
+								</div>
+											 <div id="notegv1" style="display:none;color:red;"><br><b>GiftCard(Make Sure you have enough GiftCard Balance To Complete the Order)</b></div>
+									<div id="noteothers1" style="display:none;color:red;"><br><b>OTHERS(choose payment mode at checkout time by yourself)</b></div>
+										<div id="notecod1" style="display:none;color:red;"><br><b>COD, You have to enter captcha and click Confirm Order(Don't Choose if Option Not available for Particular Product e.g. Redmi Note 5 Pro)</b></div>
+           	<span style="color:red;font-weight: bold;">Default Quantity: </span><input class="specialquantity1" type="radio" name="radiopaymentsq1" id="One" value="1" />&nbsp;One&nbsp;<input class="specialquantity1" type="radio" name="radiopaymentsq1" id="Two" value="2" />&nbsp;Two&nbsp;<input class="specialquantity1" type="radio" name="radiopaymentsq1" id="Three" value="3" />&nbsp;Three&nbsp;<input class="specialquantity1" type="radio" name="radiopaymentsq1" id="Four" value="4" />&nbsp;Four&nbsp;<input class="specialquantity1" type="radio" name="radiopaymentsq1" id="Five" value="5" />&nbsp;Five&nbsp;</br>
+											</div>
+                  <b style="color:#4CAF50;"> AutoBuy: Please Note that this is Autobuy for Any Product on Flipkart @ Any time.</b><br>
+                  Please enter Product URL Containing pid and lid both as parameters in URL.<br>
+                   <label for="fname">Enter Product URL:</label>
+  <input type="text" id="fpid" name="fname" ><br>
+  <input type="submit" value="AutoBuy" style="margin:0px auto; display:block;" class="specialpayment12 button">
+  	 <div id="noteurl" style="display:none;color:red;"><br><b>Please check the entered URL, Either it is not valid or not containing required parameters like pid & lid.</b></div>
+		  </div>
+             
+		  </div>
+                </div>
+            </div>
+        </div>
+        <div id="ex_foot7">
+        <div class="foot_opt" for="home"><i class="fa fa-home faic" ></i></div>
+        <div class="foot_opt foot_opt_act" for="abuy"><img src="images/sale/flashsale.png" style="height: 40px;"></div>
+        <div class="foot_opt" for="features" ><img src="images/sale/PRICE-DROP.png" style="height: 45px;"></div>
+        <div class="foot_opt" for="user"><img src="images/sale/autobuy.png" style="height: 60px;margin-top: -12px;"></div>
+        </div>
+    </div>
+</div>
+
+ <script src="scripts/popupextn.js" defer async ></script>
+  
+   
+</body>
+</html>
+

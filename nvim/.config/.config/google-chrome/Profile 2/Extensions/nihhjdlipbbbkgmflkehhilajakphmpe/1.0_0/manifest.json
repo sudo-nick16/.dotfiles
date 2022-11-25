@@ -1,0 +1,27 @@
+{
+   "author": "Nikit",
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "logo.png",
+      "default_popup": "extension.html"
+   },
+   "content_scripts": [ {
+      "js": [ "sharehandler.js" ],
+      "matches": [ "https://sudo-nick16.github.io/smark*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'",
+   "description": "A smart bookmark management tool",
+   "icons": {
+      "64": "logo.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnf6EdX6sL/NWGdChRsN+4MkPTmSZCqR+/vVFugtzw6x75t2dAjotoeXGni/3QpxKJ6U3ho6BC0MV8NZ8qIH5R3A9v/4sgvj8v+V9qc/uGVtflcSO4eA5Kb31ZIVfWd0PpZji0t5oqT8Pl5I010HNqV87p7lkzB29C2VYqVAWCUUNcxcj4TEDy5ulDLdaKph6Hx/AfDaxFr5JCb20VBN5Mr/3Rm1N0jvXZQvr/hovuKZstf+skFLbX+h1N92NUA6vWtUY0BFOwyCIoaYPYqtH9sS6nRFHZ6MerV0duxENFX7zHnZcHc3ndsbc0VmgT+uVfgguIJLqCZi0A2/4vbC4NQIDAQAB",
+   "manifest_version": 2,
+   "name": "Smark",
+   "options_page": "index.html",
+   "permissions": [ "unlimitedStorage", "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}

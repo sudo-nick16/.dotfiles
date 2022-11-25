@@ -1,0 +1,21 @@
+2022/11/25-17:05:55.186 333a5 Reusing MANIFEST /home/sudonick/.config/google-chrome/Profile 2/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/11/25-17:05:55.189 333a5 Recovering log #2341
+2022/11/25-17:05:55.190 333a5 Reusing old log /home/sudonick/.config/google-chrome/Profile 2/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/002341.log 
+2022/11/25-19:40:35.880 3681e Level-0 table #2346: started
+2022/11/25-19:40:35.934 3681e Level-0 table #2346: 1143342 bytes OK
+2022/11/25-19:40:35.942 3681e Delete type=0 #2341
+2022/11/25-19:44:17.773 36f4c Compacting 1@1 + 1@2 files
+2022/11/25-19:44:17.792 36f4c Generated table #2347@1: 986 keys, 117177 bytes
+2022/11/25-19:44:17.792 36f4c Compacted 1@1 + 1@2 files => 117177 bytes
+2022/11/25-19:44:17.796 36f4c compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/11/25-19:44:17.797 36f4c Delete type=2 #2346
+2022/11/25-19:44:17.797 36f4c Delete type=2 #2343
+2022/11/25-23:25:03.349 3c440 Level-0 table #2349: started
+2022/11/25-23:25:03.383 3c440 Level-0 table #2349: 1080215 bytes OK
+2022/11/25-23:25:03.388 3c440 Delete type=0 #2345
+2022/11/25-23:25:09.077 3c572 Compacting 1@1 + 1@2 files
+2022/11/25-23:25:09.086 3c572 Generated table #2350@1: 652 keys, 106797 bytes
+2022/11/25-23:25:09.086 3c572 Compacted 1@1 + 1@2 files => 106797 bytes
+2022/11/25-23:25:09.091 3c572 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/11/25-23:25:09.091 3c572 Delete type=2 #2347
+2022/11/25-23:25:09.091 3c572 Delete type=2 #2349

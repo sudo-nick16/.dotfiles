@@ -1,0 +1,28 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "browser-id3-writer.js", "crunker.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "assets/icon.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "css": [ "styles.css" ],
+      "js": [ "content-script.js" ],
+      "matches": [ "https://*.soundcloud.com/*" ]
+   } ],
+   "description": "This extension will let you download any track from Soundcloud.",
+   "icons": {
+      "128": "assets/icon-128.png",
+      "16": "assets/icon.png",
+      "48": "assets/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnjAMSPp1DG6JsuYqXkEXIOI4tbzcapNoBnU6o++msMI+QzewpOQv3Dg1KPjc094JjY9WP86N7X3WkUlLTKSxtqhv7gfDlhw9y9VKJuOQgMwRMahtLab3HEzFNz9IlotAA/GsVbM2X+FnOvU7bXOxZb60v5oNaW4yZLm9iIg4FahJ2BIGw7D/nIfWt/jsKTtbvkvwKXbxr3A2Vh4+WKanaUg0Ofh9Z8IKGWgiYP8AI8Bu8pczprwBB8Jeu+wI3dNTqj7p5SFQy3tmsFS4LR6NFkE35ZF2EiEzaZKcLDA3XEpnJNvT/voc2E6kjRL67rFIweDUBH+cRcKZQgNm5WH9bQIDAQAB",
+   "manifest_version": 2,
+   "name": "Soundcloud Download",
+   "permissions": [ "https://*.soundcloud.com/*", "tabs", "webRequest", "downloads", "webNavigation", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.3.6",
+   "web_accessible_resources": [ "assets/*" ]
+}

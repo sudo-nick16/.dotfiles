@@ -1,0 +1,13 @@
+
+function initializeApp(userConfig) {
+  new OnboardManager(userConfig).initialize();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  getExtensionUserConfig()
+      .then(userConfig => initializeApp(userConfig))
+      .catch(err => {
+        console.log(err);
+        alert(err);
+      });
+});

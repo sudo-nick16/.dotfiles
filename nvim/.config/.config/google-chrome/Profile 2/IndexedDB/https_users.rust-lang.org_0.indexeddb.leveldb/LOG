@@ -1,0 +1,6 @@
+2022/11/24-19:45:15.503 1ab41 Creating DB /home/sudonick/.config/google-chrome/Profile 2/IndexedDB/https_users.rust-lang.org_0.indexeddb.leveldb since it was missing.
+2022/11/24-19:45:15.510 1ab41 Reusing MANIFEST /home/sudonick/.config/google-chrome/Profile 2/IndexedDB/https_users.rust-lang.org_0.indexeddb.leveldb/MANIFEST-000001
+2022/11/24-23:00:18.490 1fe85 Level-0 table #5: started
+2022/11/24-23:00:18.493 1fe85 Level-0 table #5: 899 bytes OK
+2022/11/24-23:00:18.496 1fe85 Delete type=0 #3
+2022/11/24-23:00:18.497 1fe85 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

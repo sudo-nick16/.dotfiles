@@ -1,0 +1,1 @@
+import{nd as t,pd as r}from"./chunk-RMQ4NLAU.js";import{i as o,p as e}from"./chunk-LA3C5XP7.js";e();o();function l(n,a={}){let i=new Date().valueOf();return t.replace(c=>({...c,current:{id:i,timeSensitive:!1,priority:100,duration:4e3,showOnMobile:!0,render:n,...a}}),"cancel-notification"),i}var u=r,p=t;export{l as a,u as b,p as c};

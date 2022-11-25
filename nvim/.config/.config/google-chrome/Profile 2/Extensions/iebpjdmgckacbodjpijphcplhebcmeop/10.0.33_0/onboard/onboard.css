@@ -1,0 +1,233 @@
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+
+  --tc-main-accent-bg: #e9e9e9;
+  --tc-secondary-accent-bg: #f5f5f5;
+  --tc-alt-accent-bg: aliceblue;
+}
+
+.content-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.content-wrapper .slide-stack {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
+
+.content-wrapper .slide-stack .slide {
+  transition: opacity .375s ease-in-out;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.content-wrapper .slide-stack .slide.shown {
+  opacity: 1;
+}
+
+.content-wrapper .slide-stack .slide.not-shown {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.content-wrapper .slide-stack .slide .big-text {
+  font-size: 48px;
+}
+
+.content-wrapper .slide-stack .slide .sub-text {
+  font-size: 22px;
+  color: #666;
+}
+
+.content-wrapper .slide-stack .slide.padded-slide {
+  padding: 128px 32px 32px;
+  align-self: center;
+}
+
+.content-wrapper .stack-footer {
+  position: fixed;
+  bottom: 0;
+  height: 108px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  width: 100%;
+  padding: 32px;
+  z-index: 100;
+  border-top: 2px solid #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.content-wrapper .stack-footer.offscreen {
+  bottom: -108px;
+}
+
+.large-cta-button {
+  margin-top: 32px;
+}
+
+/*** EVENTUALLY ***/
+
+.type-cards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+}
+
+.type-cards .type {
+  width: 300px;
+  padding: 32px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #fff;
+  filter: drop-shadow(0 0 8px rgba(0,0,0,0.15));
+}
+
+.type-cards .type:hover {
+  filter: drop-shadow(0 0 8px rgba(0,0,12,0.4));
+}
+
+.type-cards .type .card-heading {
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.type-cards .type .card-body {
+  font-size: 16px;
+}
+
+/*** FIXED NAV ***/
+
+.sidebar-wrapper {
+  margin: 32px;
+  position: fixed;
+  width: 256px;
+}
+
+.sidebar-wrapper .fixed-nav {
+  border-radius: 4px;
+  background-color: var(--tc-main-accent-bg);
+  padding: 16px 24px;
+}
+
+.fixed-nav a,
+.fixed-nav a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.fixed-nav .active-tutorial,
+.fixed-nav li.active-tutorial a,
+.fixed-nav li:hover,
+.fixed-nav a:hover {
+  color: crimson;
+  border-color: crimson;
+}
+
+.fixed-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.fixed-nav > ul {
+  margin-bottom: 16px;
+}
+
+.fixed-nav ul ul {
+  margin-top: 8px;
+}
+
+.fixed-nav ul ul li {
+  border-left: 2px solid #999;
+  padding: 4px 4px 4px 8px;
+  margin-bottom: 4px;
+}
+
+.fixed-nav .main-nav-heading {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.tutorial-actions {
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+.TABLE_TUTORIAL {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.TABLE_TUTORIAL .main-slide-content {
+  margin-left: 288px;
+  display: flex;
+  width: 100%;
+}
+
+.TABLE_TUTORIAL .main-slide-content .heading {
+  font-size: 32px;
+}
+
+.TABLE_TUTORIAL .main-slide-content p {
+ font-size: 18px 
+}
+
+.TABLE_TUTORIAL .tutorial-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 32px;
+  overflow: auto;
+}
+
+.TABLE_TUTORIAL .example-table-wrapper {
+  background-color: aliceblue;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 16px 0;
+}
+
+.TABLE_TUTORIAL .placeholder-controls {
+  text-align: right;
+  margin-top: 32px;
+  padding: 32px;
+  background-color: var(--tc-secondary-accent-bg);
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+
+
+.TABLE_TUTORIAL .option-tag {
+  width: fit-content;
+  display: block;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 12px 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  background-color: var(--tc-alt-accent-bg);
+  border-left: 6px solid var(--tc-main-accent-bg);
+  font-family: monospace;
+}

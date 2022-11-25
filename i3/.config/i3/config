@@ -58,9 +58,9 @@ bindsym $mod+Shift+q kill
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
+bindsym $mod+l focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
 bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
@@ -220,20 +220,24 @@ exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
 
 # bg changer
 bindsym $mod+b exec --no-startup-id /home/sudonick/Desktop/mycode/bash/wallapy.sh
+
+# obsidian launcher
+bindsym $mod+Shift+o exec --no-startup-id ~/obsidian
+
 bindsym $mod+Ctrl+l exec --no-startup-id i3lock
 # stop mouse warping
 focus_follows_mouse no
 
 # set keyboard layout to colemak-dh angle mod (ansi)
 exec_always --no-startup-id setxkbmap us colemak_dh
+exec_always --no-startup-id xinput --set-prop "CUST0001:00 06CB:7E7E Touchpad" "libinput Tapping Enabled" 1
 
 # Screen brightness controls - doesn't work :(
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 10"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 10"
 
 # setting the correct pulse profile
-exec_always --no-startup-id  pacmd set-default-sink 0
-exec_always --no-startup-id  pacmd set-default-source 2
+exec_always --no-startup-id  /home/sudonick/Desktop/mycode/myscripts/myscripts
 
 # removing them ugly borders
 default_border pixel 2
@@ -246,6 +250,9 @@ bindsym $mod+Shift+period exec systemctl suspend
 # A more modern dmenu replacement is rofi:
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
+# Touchpad toggle and binding F3 to toggle touchpad
+exec_always --no-startup-id xmodmap -e "keycode 69 = XF86TouchpadToggle" 
+bindsym XF86TouchpadToggle exec --no-startup-id /home/sudonick/touch_toggle.sh
 
 # default workspace
 assign [class="Gnome-terminal"] $ws1
@@ -254,18 +261,20 @@ assign [class="Code"] $ws2
 assign [class="Google-chrome"] $ws3
 assign [class="obs"] $ws5
 assign [class="Org.gnome.Nautilus"] $ws6
+for_window [title="Thumbs"] floating disable 
 
 # move focused workspace between monitors
 bindsym $mod+Ctrl+greater move workspace to output right
 bindsym $mod+Ctrl+less move workspace to output left
 
 exec_always --no-startup-id setxkbmap -option 'caps:escape'
+exec_always --no-startup-id setxkbmap -option 'ctrl:ralt_rctrl'
 exec_always --no-startup-id xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-1 --off --output HDMI-2 --mode 1366x768 --pos 1920x0 --rotate normal
 exec_always --no-startup-id feh --bg-max "/home/sudonick/Pictures/temp/$(cat ~/wallapy.txt)" 
 
 exec --no-startup-id nautilus
 exec --no-startup-id google-chrome
-exec --no-startup-id code
 exec --no-startup-id gnome-terminal
 exec --no-startup-id cd ~ && ./obsidian
-exec --no-startup-id i3-msg 'exec gnome-terminal -- tmux attach && i3-msg move container to workspace "2 Code  "' 
+# exec --no-startup-id gnome-terminal -- tmux -u && i3-msg move container to workspace $ws2 
+# bindsym $mod+t exec --no-startup-id gnome-terminal -- tmux -u attach && i3-msg move container to workspace $ws2 

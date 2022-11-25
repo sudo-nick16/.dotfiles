@@ -1,0 +1,148 @@
+.sc-download-button {
+    background-color: transparent;
+    display: flex;
+    height: 26px;
+    padding: 2px 5px;
+    border: 1px solid #ff8c20;
+    border-radius: 3px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3px;
+}
+
+.sc-download-button-pink {
+    background-color: transparent;
+    display: flex;
+    height: 26px;
+    padding: 2px 5px;
+    border: 1px solid #ff20da;
+    border-radius: 3px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3px;
+}
+
+.sc-download-button-small {
+    height: 20px;
+    padding: 2px 3px;
+}
+
+.sc-download-button:focus {
+    outline: none;
+}
+
+.sc-download-button:hover {
+    filter: brightness(75%) hue-rotate(-20deg) saturate(150%);
+}
+
+.sc-download-button-pink:focus {
+    outline: none;
+}
+
+.sc-download-button-pink:hover {
+    filter: brightness(75%) hue-rotate(-20deg) saturate(150%);
+}
+
+.sc-download-img {
+    height: 18px;
+    width: auto;
+}
+
+.sc-download-img-small {
+    height: 14px;
+    width: auto;
+}
+
+.sc-download-text {
+    color: #ff8c20;
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans,Garuda, Verdana, Tahoma, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    font-size: 12px;
+}
+
+.sc-download-text-pink {
+    color: #ff20e1;
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans,Garuda, Verdana, Tahoma, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    font-size: 12px;
+}
+
+.sc-download-text-small {
+    font-size: 11px;
+}
+
+.sc-download-text-hide {
+    display: none;
+}
+
+.sc-download-spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+}
+
+.sc-download-spinner-small {
+    width: 30px;
+}
+
+.sc-download-spinner {
+    width: auto;
+    height: 20px;
+}
+
+.sc-ext-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+}
+
+.sc-ext-row-container:first-child {
+    margin-top: 0px;
+}
+
+.sc-ext-row-container {
+    display: flex;
+    align-items: center;
+    height: 10px;
+    margin-top: 10px;
+}
+
+.sc-ext-text {
+    color: #ff8c20;
+}
+
+.sc-ext-text:hover {
+    color: #ff2020;
+}
+
+.sc-ext-enable-checkbox {
+    filter: hue-rotate(160deg) brightness(240%);
+}
+
+.sc-ext-art-checkbox {
+    filter: hue-rotate(160deg) brightness(240%);
+}
+
+.sc-ext-repost-checkbox {
+    filter: hue-rotate(160deg) brightness(240%);
+}
+
+.sc-ext-playlists-checkbox {
+    filter: hue-rotate(160deg) brightness(240%);
+}
+
+.pink-text {
+    color: #ff20f4;
+}
+
+.pink-text:hover {
+    color: #f7217a;
+}
+
+.pink-filter {
+    filter: hue-rotate(100deg) brightness(240%);
+}

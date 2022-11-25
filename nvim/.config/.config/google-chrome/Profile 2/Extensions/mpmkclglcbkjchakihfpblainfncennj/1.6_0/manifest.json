@@ -1,0 +1,25 @@
+{
+   "author": "Foxdog Studios",
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "controls.html"
+   },
+   "content_scripts": [ {
+      "js": [ "jungle.js", "content_script.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Pitch shift the audio in HTML5 videos on any webpage, e.g., YouTube",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkWAf9VDMHf6vB4fDyREkvD6DlR0lvMDP2dWr8fXss70BwH27K2ncQFtdgBeyDBDw8G/dnQzJJO8oT1MhTjpg5VLDpChTHl2TpC21tVO8OoigXQ5jgx3Ce2vSoWjuuAIrO4dOVoHLGo6jnxmO15SM7tKSLWnoZldXGvowB9gGbVSwzY2Zosn/QkyFX7KYZVHC/u9MjW4inlXyyyoP/TZQ7UFq0VMC/INTq78c4u71Sag7bmd1pJCJUFN139tbAnF/Rx3zdiFsZs25ATX4kGs1+y+xaA6kw3MTrsnFiYBJ0JMJcCBKLmUtKpMiOpeW2yBryjJKOjOiE4vrqsSB6+t61QIDAQAB",
+   "manifest_version": 2,
+   "name": "Pitch shifter - HTML5 Video audio FX",
+   "permissions": [ "activeTab" ],
+   "short_name": "Pitch shifter",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.6"
+}

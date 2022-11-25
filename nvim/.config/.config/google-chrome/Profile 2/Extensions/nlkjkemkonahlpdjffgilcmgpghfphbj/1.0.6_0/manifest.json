@@ -1,0 +1,31 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "browser-polyfill.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "assets/icon16.png",
+      "default_popup": "index.html",
+      "default_title": "Twitter video downloader history"
+   },
+   "content_scripts": [ {
+      "css": [ "styles/twitter.css" ],
+      "js": [ "browser-polyfill.js", "contentScripts.js" ],
+      "matches": [ "https://twitter.com/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "Twitter Video Downloader allows you to download twitter videos but also copy easyly their shareable link.",
+   "icons": {
+      "128": "assets/icon128.png",
+      "16": "assets/icon16.png",
+      "32": "assets/icon32.png",
+      "48": "assets/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmJSDuWLYmQKAXz2NjymH9mMZH1hz/ApH6UfyDjdCa6IlYb5UPI50tbBYh/BQx1nwYRRyBd0Bi7O/C6ORZy/F7ysj2EaqXRfRGzDzdpjH0dvWVEaBXwhtF1U6WKxQdoKBbjIFTxtAH02ZoLeu6JggNQ6Q3x73CRfViJ90hiR2lBG0DPyrByuBIJSQX1v+gISbpN+SvFXCF8dz61Dg8U0tGWq8mWel2uT70yxFjNrhKB7MoRKsFlwXcIYlrB57+HoHizgqgUr2LXPsbMNbT1mc4heME/BBCbiMhASdwy/QkkpEBppJil9QP4W/u5VHFsirYRdtddM/hhxBumw3v5ilvQIDAQAB",
+   "manifest_version": 2,
+   "name": "Twitter Video Downloader",
+   "permissions": [ "storage", "downloads" ],
+   "short_name": "TVD",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.6"
+}

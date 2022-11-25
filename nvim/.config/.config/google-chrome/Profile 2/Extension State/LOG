@@ -1,0 +1,39 @@
+2022/11/24-16:31:22.336 18b59 Reusing MANIFEST /home/sudonick/.config/google-chrome/Profile 2/Extension State/MANIFEST-000001
+2022/11/24-16:31:22.339 18b59 Recovering log #817
+2022/11/24-16:31:22.363 18b59 Reusing old log /home/sudonick/.config/google-chrome/Profile 2/Extension State/000817.log 
+2022/11/24-20:17:14.967 1c08b Level-0 table #821: started
+2022/11/24-20:17:14.982 1c08b Level-0 table #821: 2171719 bytes OK
+2022/11/24-20:17:14.988 1c08b Delete type=0 #817
+2022/11/24-20:17:14.988 1c08b Compacting 4@0 + 1@1 files
+2022/11/24-20:17:15.008 1c08b Generated table #822@0: 15 keys, 13905 bytes
+2022/11/24-20:17:15.008 1c08b Compacted 4@0 + 1@1 files => 13905 bytes
+2022/11/24-20:17:15.011 1c08b compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/11/24-20:17:15.012 1c08b Delete type=2 #818
+2022/11/24-20:17:15.012 1c08b Delete type=2 #821
+2022/11/24-20:17:15.012 1c08b Delete type=2 #816
+2022/11/24-20:17:15.012 1c08b Delete type=2 #814
+2022/11/24-20:17:15.012 1c08b Delete type=2 #811
+2022/11/24-23:40:08.056 21280 Level-0 table #824: started
+2022/11/24-23:40:08.073 21280 Level-0 table #824: 2170697 bytes OK
+2022/11/24-23:40:08.078 21280 Delete type=0 #820
+2022/11/25-02:40:19.516 24fc3 Level-0 table #826: started
+2022/11/25-02:40:19.543 24fc3 Level-0 table #826: 2264083 bytes OK
+2022/11/25-02:40:19.547 24fc3 Delete type=0 #823
+2022/11/25-13:23:47.078 2bbed Level-0 table #828: started
+2022/11/25-13:23:47.117 2bbed Level-0 table #828: 2162059 bytes OK
+2022/11/25-13:23:47.124 2bbed Delete type=0 #825
+2022/11/25-17:24:47.257 33c8c Level-0 table #830: started
+2022/11/25-17:24:47.319 33c8c Level-0 table #830: 2158666 bytes OK
+2022/11/25-17:24:47.326 33c8c Delete type=0 #827
+2022/11/25-17:24:47.327 33c8c Compacting 4@0 + 1@1 files
+2022/11/25-17:24:47.352 33c8c Generated table #831@0: 16 keys, 13994 bytes
+2022/11/25-17:24:47.352 33c8c Compacted 4@0 + 1@1 files => 13994 bytes
+2022/11/25-17:24:47.355 33c8c compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/11/25-17:24:47.355 33c8c Delete type=2 #828
+2022/11/25-17:24:47.355 33c8c Delete type=2 #824
+2022/11/25-17:24:47.355 33c8c Delete type=2 #822
+2022/11/25-17:24:47.355 33c8c Delete type=2 #826
+2022/11/25-17:24:47.355 33c8c Delete type=2 #830
+2022/11/25-21:57:12.919 3a4f3 Level-0 table #833: started
+2022/11/25-21:57:12.963 3a4f3 Level-0 table #833: 2183073 bytes OK
+2022/11/25-21:57:12.968 3a4f3 Delete type=0 #829

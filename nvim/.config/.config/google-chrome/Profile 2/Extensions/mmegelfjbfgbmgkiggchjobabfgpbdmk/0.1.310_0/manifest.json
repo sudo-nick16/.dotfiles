@@ -1,0 +1,31 @@
+{
+   "action": {
+      "default_title": "Be Zen"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "contentScript.js" ],
+      "matches": [ "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Find the best ethical and affordable sustainable brands",
+   "differential_fingerprint": "1.d50a4bd34f12866072043e464874214b70631aabd05e327bde74b4e22d8bfbf5",
+   "externally_connectable": {
+      "matches": [ "*://*.bezen.eco/*" ]
+   },
+   "host_permissions": [ "*://*.bezen.eco/", "*://*/*", "https://www.amazon.in/*" ],
+   "icons": {
+      "128": "kid.png",
+      "16": "kid.png",
+      "32": "kid.png",
+      "48": "kid48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhBPtKmpKacjN+9/oxPWjVxGqDieHFojgT9RpXospt8HsvBzovZba0AjhMFVLPAHufvc0REY3Ls9ffhTY5DaKctHchaG7/VWvDvslAaG5hiQl1mltP++k8Ki2UXgL1fDXEFcyZ0+ACxF0Zs93j0trUF6B60PohbQn6IlBy7z/xEoXqZ8qgKXvgOKb39Ko87UYFjJ8D4tO0Retzfv/7qhYcR2WZawGUAVlNBlH4HBT086JD/06ta58keP5YIJNZJtqU1KWou3/SKKsWW46Uujh2pdINoxJeAzHDk+pcMU42PLsqdb+5g6pjgPRTUf1vF+S/J0vHFW/8HcF3o4Xeu/fwQIDAQAB",
+   "manifest_version": 3,
+   "name": "Be Zen - Your Eco-friendly Shopping Assistant",
+   "permissions": [ "storage", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.310"
+}

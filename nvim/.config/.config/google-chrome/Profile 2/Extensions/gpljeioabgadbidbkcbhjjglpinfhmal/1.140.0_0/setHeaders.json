@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "x-oslash-extension",
+          "operation": "set",
+          "value": "1"
+        }
+      ]
+    },
+    "condition": {
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "font",
+        "object",
+        "xmlhttprequest"
+      ],
+      "urlFilter": "||oslash.com"
+    }
+  }
+]

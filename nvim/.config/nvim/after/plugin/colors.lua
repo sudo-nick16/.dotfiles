@@ -1,7 +1,4 @@
-function ColorMe(color)
-	color = color or "rose-pine"
-	vim.cmd.colorscheme(color)
-
+function Configure_colors()
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
@@ -17,13 +14,13 @@ function ColorMe(color)
         bg = "none",
     })
 
-    hl("ColorColumn", {
-        ctermbg = 0,
-    })
+     -- hl("ColorColumn", {
+     --     ctermbg = 0,
+     -- })
 
-    hl("CursorLineNR", {
-        bg = "none"
-    })
+     hl("CursorLineNR", {
+         bg = "none"
+     })
 
     hl("Normal", {
         bg = "none"
@@ -31,4 +28,4 @@ function ColorMe(color)
 
 end
 
-ColorMe()
+Configure_colors()

@@ -1,3 +1,3 @@
-require("sudonick.packer")
-require("sudonick.remap")
 require("sudonick.set")
+require("sudonick.remap")
+require("sudonick.packer")
